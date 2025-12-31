@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .vivo-promo {
+            position: relative;
+            width: 500px;
+            height: 200px;
+            margin: 100px auto;
+        }
+
+        .vivo-promo img {
+            width: 100%;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            width: 20px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            top: 50%;
+            margin-top: -12px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 100% 100% 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 50% 0 0 50%;
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 65px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, .3);
+            border-radius: 7px;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            margin: 4px;
+            background-color: #FFF;
+        }
+
+        .promo-nav .selected {
+            background-color: rgb(30, 64, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vivo-promo">
+        <img src="../images/vivox200ultra.jpg" alt="#">
+        <a class="prev" href="#">&lt;</a>
+        <a class="next" href="#">&gt;</a>
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

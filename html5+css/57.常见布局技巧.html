@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见布局技巧</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li {
+            float: left;
+            width: 150px;
+            height: 200px;
+            border: 1px solid #666;
+            margin-left: -1px;
+            margin-top: -1px;
+        }
+
+        ul li:hover {
+            position: relative;
+            border: 1px solid rgb(255, 111, 0);
+        }
+
+        .box1 {
+            float: left;
+            width: 400px;
+            height: 100px;
+            margin-top: 50px;
+            margin-right: 1000px;
+            border: 1px solid red;
+        }
+
+        .box1 img {
+            float: left;
+            width: 150px;
+            height: 100px;
+            margin-right: 5px;
+            /* vertical-align: middle; */
+        }
+
+        .box2 {
+            float: left;
+            margin-top: 50px;
+            /* text-align: center; */
+        }
+
+        .box2 a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 36px;
+        }
+
+        .box2 .prev,
+        .box2 .next {
+            width: 85px;
+            font-size: 14px;
+        }
+
+        .box2 input {
+            height: 30px;
+            width: 35px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .box2 button {
+            height: 36px;
+            width: 45px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+        }
+
+        .box3 {
+            float: left;
+            width: 0;
+            height: 0;
+            border-top: 200px solid transparent;
+            border-bottom: 0 solid rgb(30, 0, 255);
+            border-left: 0 solid rgb(0, 255, 94);
+            border-right: 100px solid rgb(255, 0, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- margin负值运用 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <!-- 文字围绕浮动元素 -->
+    <div class="box1"><img src="../images/王者背景图.webp" alt="">
+        <p>这里是段文字，用来测试效果，这段文字需要尽量写长一点，方便进行测试</p>
+    </div>
+
+    <!-- 行内块的巧妙运用 -->
+    <div class="box2">
+        <a href="#" class="prev">&lt;&lt;上一页</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#" class="next">&gt;&gt;下一页</a>
+        到第
+        <input type="text">
+        页
+        <button>确定</button>
+    </div>
+
+    <!-- CSS 三角强化 -->
+    <div class="box3"></div>
+</body>
+
+</html>

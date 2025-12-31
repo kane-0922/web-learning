@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('../icomoon/fonts/icomoon.eot?s6xria');
+            src: url('../icomoon/fonts/icomoon.eot?s6xria#iefix') format('embedded-opentype'),
+                url('../icomoon/fonts/icomoon.ttf?s6xria') format('truetype'),
+                url('../icomoon/fonts/icomoon.woff?s6xria') format('woff'),
+                url('../icomoon/fonts/icomoon.svg?s6xria#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            position: relative;
+            width: 200px;
+            height: 35px;
+            border: 1px solid red;
+        }
+
+        div::after {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'icomoon';
+            content: '\ea41';
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

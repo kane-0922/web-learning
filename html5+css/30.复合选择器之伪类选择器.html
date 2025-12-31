@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 选择所有未被访问过的链接 */
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 选择所有已被访问过的链接 */
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 选择鼠标指针位于其上的链接 */
+        a:hover {
+            color: #369;
+            text-decoration: underline;
+        }
+
+        /* 选择活动链接（鼠标按下未弹起的链接） */
+        a:active {
+            color: green;
+        }
+
+        /* focus伪类选择器 */
+        input:focus {
+            background-color: rgb(255, 54, 54);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.qq.com" target="_blank">腾讯官网</a><br>
+    <a href="http://www.mi.com" target="_blank">小米官网</a><br>
+    <a href="http://www.huawei.com" target="_blank">华为官网</a><br>
+    <a href="http://www.163.com" target="_blank">网易官网</a><br>
+    <input type="button" value="更多信息">
+</body>
+
+</html>
