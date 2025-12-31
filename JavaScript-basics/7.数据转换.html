@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据转换</title>
+</head>
+
+<body>
+    <script>
+        console.log('11' + 11)
+        console.log(11 + +'11')
+        let str = '123'
+        console.log(Number(str))
+        let num1 = Number(prompt('请输入数字1:'))
+        console.log(num1)
+        let num2 = +(prompt('请输入数字2:'))
+        console.log(num2)
+        let sum = (num1 + num2)
+        alert(`两个数相加的和是:${sum}`)
+        console.log(parseInt('12px'))
+        console.log(parseInt('12.34px'))
+        console.log(parseInt('12.94px'))
+        console.log(parseFloat('12px'))
+        console.log(parseFloat('12.34px'))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 1; i <= 3; i++) {
+            document.write(`月薪过万<br>`)
+        }
+
+        // 1-100之间偶数和
+        let sum = 0
+        for (let k = 1; k <= 100; k++) {
+            if (k % 2 === 0) {
+                sum += k
+            }
+        }
+        document.write(`1~100偶数和为: ${sum}<br>`)
+
+        // for (let j = 1; j <= 100; j++) {
+        //     document.write(`这是第${j}个数<br>`)
+        // }
+
+        let arr = ['语文', '数学', '英语', '物理', '历史']
+        for (let m = 0; m < arr.length; m++) {
+            document.write(`${arr[m]}<br>`)
+        }
+    </script>
+</body>
+
+</html>

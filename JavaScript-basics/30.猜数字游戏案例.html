@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字</title>
+</head>
+
+<body>
+    <script>
+        // 定义max和min的筛选函数
+        function max(arr) {
+            let max = arr[0]
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[0] < arr[i]) {
+                    max = arr[i]
+                }
+            }
+            return max
+        }
+        function min(arr) {
+            let min = arr[0]
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[0] > arr[i]) {
+                    min = arr[i]
+                }
+            }
+            return min
+        }
+
+        let randomNum = Math.floor(Math.random() * 100) + 1
+        console.log(randomNum)
+
+        let arr1 = [1]
+        let arr100 = [100]
+
+        alert('这是一个猜数游戏, 在1 ~ 100之间猜数, 快来试试吧！')
+        let n = +prompt('你觉得你猜几次能猜中呢？')
+        if (n <= 0) {
+            alert('太淘气了哦，刷新页面重新开始')
+        }
+
+        for (let i = 0; i < n; i++) {
+            let guessNum = +prompt(`输入数字猜一猜(${max(arr1)} ~ ${min(arr100)}), 还可以猜${n - i}次`)
+            if (guessNum > randomNum) {
+                arr100.push(guessNum)
+                if (n - i === 1) {
+                    alert('还是不对哦，次数用尽，下次加油')
+                    break
+                }
+                alert(`你猜的数字太大了哦`)
+            }
+            else if (guessNum < randomNum) {
+                arr1.push(guessNum)
+                if (n - i === 1) {
+                    alert('还是不对哦，次数用尽，下次加油')
+                    break
+                }
+                alert(`你猜的数字有点小哦`)
+            }
+            else {
+                if (n - i === 1) {
+                    alert('呼~，压线猜对，还是恭喜你啦')
+                    break
+                }
+                alert('哇，恭喜你猜对了')
+                break
+            }
+        }
+    </script>
+</body>
+
+</html>

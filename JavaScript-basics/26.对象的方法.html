@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的方法</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            uname: '孙燕姿',
+            song: function () {
+                console.log('我怀念的')
+            },
+            add: function (x, y) {
+                console.log(x + y)
+            }
+        }
+        // 方法是依附在对象中的函数
+        obj.song()
+        obj.add(1, 2)
+    </script>
+</body>
+
+</html>

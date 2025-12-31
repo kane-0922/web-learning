@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>退出语句的使用案例</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            let str = prompt('你喜欢我吗？')
+            if (str === '喜欢' || str === 'yes') {
+                alert('我也喜欢你:)')
+                break
+            }
+            else {
+                alert('你再想想>_<')
+            }
+        }
+        // 注：break是退出循环 continue是退出本次循环(不执行continue后面的代码)
+    </script>
+</body>
+
+</html>

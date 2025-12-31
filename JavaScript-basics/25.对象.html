@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象</title>
+</head>
+
+<body>
+    <script>
+        let goods = {
+            name: 'iPhone16pro',
+            num: '10012816024',
+            weight: '0.31kg',
+            'goods-address': '中国'
+        }
+        // 改
+        goods.name = '华为Pura70'
+        // 增
+        goods.date = '2025年'
+        goods.color = "白色"
+        // delete goods.num
+
+        // console.log(goods.address)
+        console.log(goods['goods-address'])
+        console.log(goods.name)
+        console.log(goods)
+
+        // 利用for循环依次输出对象
+        console.log('------------------------------')
+        for (let k in goods) {
+            console.log(goods[k])
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM取款机</title>
+</head>
+
+<body>
+    <script>
+        let money = 7650
+        while (true) {
+            let i = +prompt(`请输入您的需求序号:
+            1.存款 
+            2.取款
+            3.查看余额 
+            4.退出`)
+            if (i === 4) {
+                alert('已安全退出')
+                break
+            }
+            switch (i) {
+                case 1:
+                    add = +prompt('请输入您要存入的金额:')
+                    money += add
+                    alert('存款成功')
+                    break
+                case 2:
+                    sub = +prompt('请输入您要取出的金额：')
+                    if (sub <= money) {
+                        money -= sub
+                        alert(`取款成功`)
+                        break
+                    }
+                    else {
+                        alert('账户余额不足')
+                        break
+                    }
+                case 3:
+                    alert(`您的账户余额为：${money}`)
+                    break
+            }
+        }
+    </script>
+</body>
+
+</html>

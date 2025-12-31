@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九九乘法表</title>
+    <style>
+        span {
+            display: inline-block;
+            padding: 5px 10px;
+            width: 70px;
+            height: 25px;
+            border: 1px solid #666;
+            margin: 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // let row = +prompt('请输入你要输出的行数：')
+        // let col = +prompt('请输入你要输出的列数：')
+        // for (m = 1; m <= row; m++) {
+        //     for (n = 1; n <= col; n++) {
+        //         document.write('★')
+        //     }
+        //     document.write('<br>')
+        // }
+
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                let result = i * j
+                document.write(`<span>${j} x ${i} = ${result}</span>`)
+            }
+            document.write(`<br>`)
+        } 
+    </script>
+</body>
+
+</html>

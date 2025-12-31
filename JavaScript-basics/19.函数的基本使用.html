@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数的封装与复用</title>
+    <style>
+        span {
+            display: inline-block;
+            padding: 5px 10px;
+            width: 70px;
+            height: 25px;
+            border: 1px solid #666;
+            margin: 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function getSum(num1 = 0, num2 = 0) {
+            console.log(num1 + num2)
+        }
+        let n = +prompt('请输入第一个数:')
+        let m = +prompt('请输入第二个数:')
+        getSum(n, m)
+
+        function sayHi() {
+            document.write('hi~~~<br>')
+        }
+
+        function sheet99() {
+            for (let i = 1; i <= 9; i++) {
+                for (let j = 1; j <= i; j++) {
+                    let result = i * j
+                    document.write(`<span>${j} x ${i} = ${result}</span>`)
+                }
+                document.write(`<br>`)
+            }
+        }
+        sayHi()
+        for (let j = 1; j <= 3; j++) {
+            sheet99()
+        }
+
+    </script>
+</body>
+
+</html>

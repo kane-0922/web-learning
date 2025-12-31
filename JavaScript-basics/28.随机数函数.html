@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机数函数</title>
+</head>
+
+<body>
+    <script>
+        // 随机取0~1之间的数
+        console.log(Math.random())
+        // 随机取0~10之间的整数
+        console.log(Math.floor(Math.random() * 11))
+        // 随机取N~M之间的整数
+        function getRandom(N, M) {
+            return Math.floor(Math.random() * (M - N + 1)) + N
+        }
+        console.log(getRandom(3, 9))
+    </script>
+</body>
+
+</html>

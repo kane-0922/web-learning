@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成绩判断</title>
+</head>
+
+<body>
+    <script>
+        let score = +prompt('请输入成绩：')
+        switch (true) {
+            case score >= 85:
+                alert('成绩是 A ')
+                break
+            case score >= 70:
+                alert('成绩是 B ')
+                break
+            case score >= 60:
+                alert('成绩是 C ')
+                break
+            default:
+                alert('成绩是 D ')
+                break
+        }
+    </script>
+</body>
+
+</html>

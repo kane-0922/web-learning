@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机点名</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['钢铁侠', '绿巨人', '美国队长', '黑寡妇', '雷神', '蜘蛛侠', '奇异博士']
+        function getName() {
+            let random = Math.floor(Math.random() * arr.length)
+            lucky = arr[random]
+            arr.splice(random, 1)
+            console.log(arr)
+            return lucky
+        }
+
+        document.write(getName())
+    </script>
+</body>
+
+</html>
