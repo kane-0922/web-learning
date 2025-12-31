@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <form action="demo.php" method="get" name="part1">
+        <!-- text：文本框，用户在里面输入内容 -->
+        姓名：<input type="text" placeholder="请输入姓名"><br>
+        <!-- radio:单选按钮，使用相同的name值，可以实现多选一 -->
+        <br>
+        性别：<input type="radio" name="sex" value="男" id="man"><label for="man">男</label>
+        <input type="radio" name="sex" value="女" id="woman"><label for="woman">女</label><br>
+        <br>
+        <!-- checkbox:复选框，可以实现多选效果，checked属性可以设置默认勾选 -->
+        <input type="checkbox" name="statement" value="已接受入学通知" checked="checked">我已接受入学通知书
+        <input type="checkbox" name="statement" value="已读入学需知">我已阅读入学需知<br>
+        <br>
+        <!-- select下拉表单元素 -->
+        专业：
+        <select>
+            <option></option>
+            <option>信息管理</option>
+            <option>工程管理</option>
+            <option>工程造价</option>
+            <option>会计学</option>
+            <option>审计学</option>
+            <option>财务管理</option>
+        </select><br>
+        <br>
+        <!-- textarea:文本域，可以输入大段文字 -->
+        你对未来有什么期待：<br>
+        <textarea name="留言" id="wish" placeholder="在此输入内容"></textarea><br>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重新填写">
+        <a href="https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&vd_source=40f8033cc1e073c2c7e933be3b9af582"
+            target="_blank"><input type="button" value="不要点我"></a><br>
+        <input type="file">
+    </form>
+</body>
+
+</html>
